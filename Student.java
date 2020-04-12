@@ -70,3 +70,30 @@ class Student {
 		return polozheni*6;
 	}
 }
+class Faculty{
+	List<Student> studentList;
+	String imeNaFax;
+
+	public Faculty(String imeNaFax) {
+		this.imeNaFax = imeNaFax;
+	}
+
+	public String getImeNaFax() {
+		return imeNaFax;
+	}
+
+	public void setImeNaFax(String imeNaFax) {
+		this.imeNaFax = imeNaFax;
+	}
+
+	public void addStudent(Student student){
+		studentList.add(student);
+	}
+
+	public void removeStudent(Student student){
+		studentList.remove(student);
+	}
+
+
+
+}
